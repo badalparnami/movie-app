@@ -11,7 +11,7 @@ import { clearError } from "../../../store/actions/fww";
 
 const FwwDisplay = ({ eff }) => {
   const dispatch = useDispatch();
-  const { error, loading, favourite, watched, watchlist } = useSelector(
+  const { errorR, loadingR, favourite, watched, watchlist } = useSelector(
     (state) => state.fww
   );
   const { token } = useSelector((state) => state.auth);
@@ -40,9 +40,9 @@ const FwwDisplay = ({ eff }) => {
   return (
     <>
       {isAuth}
-      {error && <ErrorModal onClose={() => clear()}>{error}</ErrorModal>}
+      {errorR && <ErrorModal onClose={() => clear()}>{errorR}</ErrorModal>}
       {/* <ProfileNav /> */}
-      {loading && <LoadingIndicator />}
+      {loadingR && <LoadingIndicator />}
       {dataToDisplay[eff] && (
         <h1 style={{ marginBottom: "1rem", textAlign: "center" }}>
           {headingToDisplay[eff]}

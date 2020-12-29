@@ -1,0 +1,14 @@
+.faq-section {
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 70rem;
+}
+
+.faq-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.accordion__button {
+  outline: none;
+}

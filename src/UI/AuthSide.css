@@ -1,0 +1,47 @@
+.auth-side {
+  margin-left: 10rem;
+  color: white;
+}
+
+.auth-side p {
+  margin: 7rem 0;
+  line-height: 2.5rem;
+}
+
+.auth-side p span {
+  margin-left: 1rem;
+  display: block;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .auth-side {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 957px) {
+  .auth-side p span {
+    display: inline;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  .auth-side {
+    justify-self: center;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  .auth-side p {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 358px) {
+  .auth-side p span {
+    display: inline;
+    margin-left: 1rem;
+  }
+}

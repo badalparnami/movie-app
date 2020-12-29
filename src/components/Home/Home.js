@@ -9,6 +9,7 @@ import PersonMain from "../Person/Main/Main";
 const Home = () => {
   return (
     <div className="home">
+      {/* <MovieMain eff="p" num={-1} /> */}
       <div className="movie entertainment-show">
         <div className="more">
           <p>Popular Movies</p>

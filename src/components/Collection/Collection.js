@@ -6,7 +6,7 @@ import "./Collection.css";
 import useHttp from "../../hooks/http";
 import ErrorModal from "../../UI/ErrorModal";
 import LoadingIndicator from "../../UI/LoadingIndicator";
-import { ImageSmall, GenreList, ShowMoreIcon } from "../../Dumb/Small/Small";
+import { ImageSmall, GenreList } from "../../Dumb/Small/Small";
 
 const Collection = ({ id }) => {
   const { data, error, loading, requestData, clear } = useHttp();

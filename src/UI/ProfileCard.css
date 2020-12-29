@@ -1,0 +1,125 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+.dark-grey {
+  color: var(--Dark-gray);
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.profile-card .container {
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.wxaxis {
+  width: 28rem;
+}
+
+.profile-card .box1 {
+  height: 13rem;
+  background-color: var(--Dark-cyan);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-image: url("./bg-pattern-card.svg");
+}
+
+.profile-card .box2 {
+  height: 15rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--Dark-grayish-blue) 0.1rem solid;
+}
+
+.profile-card .f700 {
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.profile-card .box2-img {
+  position: relative;
+  top: -30%;
+}
+
+.profile-card .box2-img img {
+  border-radius: 50%;
+  border: 0.5rem solid white;
+}
+
+.profile-card .box2-name {
+  position: relative;
+  top: -20%;
+  margin-bottom: 1rem;
+}
+
+.profile-card .box2-name a {
+  text-decoration: none;
+  color: unset;
+}
+
+.profile-card .box2-country {
+  position: relative;
+  top: -20%;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.profile-card .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 3rem;
+}
+
+.profile-card .footer-followers,
+.profile-card .footer-likes,
+.profile-card .footer-photos {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 370px) {
+  .wxaxis {
+    width: 25rem;
+  }
+
+  .profile-card .footer {
+    padding: 2.5rem;
+  }
+
+  .profile-card .box2 {
+    height: 12rem;
+  }
+
+  .profile-card .box1 {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .wxaxis {
+    width: 23rem;
+  }
+}

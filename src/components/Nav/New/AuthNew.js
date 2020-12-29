@@ -6,6 +6,8 @@ import { clearError as clearErrorFWW } from "../../../store/actions/fww";
 import { Redirect } from "react-router";
 import LoadingIndicator from "../../../UI/LoadingIndicator";
 import ErrorModal from "../../../UI/ErrorModal";
+import Faq from "../../../UI/Faq";
+import AuthSide from "../../../UI/AuthSide";
 
 const Auth = () => {
   const dispatch = useDispatch();
@@ -69,6 +71,8 @@ const Auth = () => {
       {isAuth}
       {!loading && !loadingR && (
         <div className="auth-body">
+          {/* {!isLogin && <AuthSide />} */}
+          <AuthSide />
           <form
             onSubmit={onSubmitHandler}
             className="signup"
@@ -147,6 +151,7 @@ const Auth = () => {
           {authError && <p>({authError})</p>}
         </div>
       )}
+      {!loading && !loadingR && <Faq />}
     </>
   );
 };

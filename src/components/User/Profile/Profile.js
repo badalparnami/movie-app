@@ -6,6 +6,7 @@ import { NavLink, useHistory, Redirect } from "react-router-dom";
 import ErrorModal from "../../../UI/ErrorModal";
 import LoadingIndicator from "../../../UI/LoadingIndicator";
 import "./Profile.css";
+import ProfileCard from "../../../UI/ProfileCard";
 // import backdrop from "../../../none.png";
 import { ProfileNav } from "../../../Dumb/Small/Small";
 
@@ -41,10 +42,10 @@ const Credits = ({ credits, img, name, redirect }) => {
 const Profile = () => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const { error, loading, name, favourite, watched, watchlist } = useSelector(
+  const { errorR, loadingR, name, favourite, watched, watchlist } = useSelector(
     (state) => state.fww
   );
-  const { token } = useSelector((state) => state.auth);
+  const { token, userId } = useSelector((state) => state.auth);
 
   let isAuth = null;
 
@@ -63,19 +64,26 @@ const Profile = () => {
   return (
     <div>
       {isAuth}
-      {error && <ErrorModal onClose={clear}>{error}</ErrorModal>}
+      {errorR && <ErrorModal onClose={clear}>{errorR}</ErrorModal>}
       <ProfileNav />
-      {loading && <LoadingIndicator />}
+      {loadingR && <LoadingIndicator />}
       {name && (
-        <div className="profile-main">
-          <h3>
-            {`Welcome ${name.toUpperCase()}`}
-            <span>{`You have total ${
-              favourite.length + watchlist.length + watched.length
-            } Entertainer(s) in your list.`}</span>
-          </h3>
-          <p>{`${favourite.length} in your Favourite list, ${watchlist.length} in Watchlist and ${watched.length} in Watched list. `}</p>
-        </div>
+        // <div className="profile-main">
+        //   <h3>
+        //     {`Welcome ${name.toUpperCase()}`}
+        //     <span>{`You have total ${
+        //       favourite.length + watchlist.length + watched.length
+        //     } Entertainer(s) in your list.`}</span>
+        //   </h3>
+        //   <p>{`${favourite.length} in your Favourite list, ${watchlist.length} in Watchlist and ${watched.length} in Watched list. `}</p>
+        // </div>
+        <ProfileCard
+          id={userId == "5feb1cdaad62d011b01ad93d"}
+          name={name}
+          fcount={favourite.length}
+          wdcount={watched.length}
+          wlcount={watchlist.length}
+        />
       )}
       <div className="profile-sub">
         {favourite.length > 0 && (
