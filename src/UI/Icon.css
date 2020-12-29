@@ -1,0 +1,36 @@
+.icons {
+  margin-top: 1rem;
+  width: 30rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.icons p {
+  justify-self: center;
+}
+
+.icons svg {
+  cursor: pointer;
+  background-color: rgb(210, 214, 255);
+  border-radius: 50%;
+  padding: 1rem;
+  justify-self: center;
+}
+
+.icons-three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icons-two {
+  grid-template-columns: 1fr 1fr;
+}
+.icons svg:hover {
+  color: crimson;
+  background-color: khaki;
+}
+
+@media (max-width: 321px) {
+  .icons {
+    width: 20rem;
+  }
+}

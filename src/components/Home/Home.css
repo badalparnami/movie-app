@@ -1,0 +1,30 @@
+.home .tv,
+.home .person {
+  margin-top: 3rem;
+}
+
+.home p {
+  margin-bottom: 1rem;
+}
+
+.home .entertainment-show .more {
+  margin: 1rem 0rem;
+}
+
+@media (max-width: 1300px) {
+  .home .entertainment-show .more {
+    margin: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1103px) {
+  .home .entertainment-show .more {
+    margin: 1rem 4rem;
+  }
+}
+
+@media (max-width: 890px) {
+  .home .entertainment-show .more {
+    margin: 1rem 7rem;
+  }
+}

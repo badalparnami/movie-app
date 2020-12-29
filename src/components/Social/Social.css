@@ -1,0 +1,34 @@
+.social {
+  margin-top: 2rem;
+}
+
+.social .social-icons {
+  display: flex;
+}
+
+.social .social-icons svg {
+  cursor: pointer;
+}
+
+.social .fb,
+.social .insta {
+  margin-right: 1rem;
+}
+
+.social .fb:hover {
+  color: rgb(66, 103, 178);
+}
+
+.social .insta:hover {
+  color: #c13584;
+}
+
+.social .twitter:hover {
+  color: rgb(29, 161, 242);
+}
+
+@media (max-width: 768px) {
+  .social p {
+    text-align: center;
+  }
+}

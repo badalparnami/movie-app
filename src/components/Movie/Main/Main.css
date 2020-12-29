@@ -1,0 +1,55 @@
+.entertainment-heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.entertainment-main {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 236px));
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.entertainment-main .data {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.entertainment-main .data .redirect,
+.entertainment-main .data .redirect:link,
+.entertainment-main .data .redirect:visited,
+.entertainment-main .data .redirect:active {
+  text-decoration: none;
+  color: white;
+}
+
+.entertainment-main .data .redirect:hover {
+  color: crimson;
+  transition: all 0.5s;
+}
+
+.entertainment-main .data img {
+  margin-top: 1rem;
+}
+
+.entertainment-main .data .content {
+  padding: 0 1rem;
+}
+
+.entertainment-main .data .content h1 {
+  margin: 1rem 0;
+}
+
+.entertainment-main .data .content h2 {
+  margin: 1rem 0;
+  line-height: 2.7rem;
+}
+
+.entertainment-main .data .content p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}

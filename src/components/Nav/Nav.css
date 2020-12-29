@@ -1,0 +1,64 @@
+.nav-main {
+  padding: 2rem;
+  border-bottom: 0.2rem solid #ccc;
+  /* position: sticky;
+  top: 0;
+  background-color: whitesmoke; */
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+  justify-content: space-evenly;
+}
+
+@media (max-width: 550px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav .home,
+.nav .movie,
+.nav .tv,
+.nav .person,
+.nav .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 0.3rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
+  text-align: center;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: hsl(220, 98%, 61%);
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.nav a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #ccc;
+}

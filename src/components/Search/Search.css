@@ -1,0 +1,6 @@
+.search input {
+  padding: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}

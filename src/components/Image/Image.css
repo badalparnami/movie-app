@@ -1,0 +1,8 @@
+.entertainment-show .credits .img-content img {
+  border-radius: 0.5rem;
+  border: 0.1rem black solid;
+}
+
+.entertainment-show .credits .img-content {
+  cursor: pointer;
+}

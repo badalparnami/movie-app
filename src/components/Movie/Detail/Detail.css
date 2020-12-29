@@ -1,0 +1,153 @@
+.entertainment-detail {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 3rem; */
+  display: flex;
+}
+
+.entertainment-detail .img-icon {
+  /* margin: 0 3rem; */ /* tv series*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entertainment-detail img {
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.entertainment-detail .content {
+  margin-top: 3rem;
+  margin-left: 3rem; /*person*/
+}
+
+.entertainment-detail .content span::after {
+  content: " | ";
+}
+
+.entertainment-detail .content span:last-child::after {
+  content: "";
+}
+
+.entertainment-detail .content h4 {
+  margin-top: 1rem;
+}
+
+.entertainment-detail .content h5 {
+  margin-top: 1rem;
+}
+
+.entertainment-detail .content .provider {
+  margin-top: 1rem;
+  color: crimson;
+}
+
+.entertainment-detail .content .overview {
+  margin-top: 3rem;
+}
+
+.entertainment-detail .content .overview p {
+  margin-top: 1rem;
+}
+
+.entertainment-detail .content .trailer {
+  margin-top: 2rem;
+}
+
+.entertainment-detail .content .trailer a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.6rem 0.8rem;
+}
+
+.entertainment-detail .content .trailer a:hover {
+  text-decoration: none;
+  color: crimson;
+  background-color: black;
+  padding: 0.6rem 0.8rem;
+  transition: all 0.7s;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.entertainment-detail .content .rating {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1272px) {
+  .entertainment-detail {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .entertainment-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entertainment-detail .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entertainment-detail .content .overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entertainment-detail .content .overview p {
+    text-align: center;
+  }
+
+  .entertainment-detail .isEp {
+    width: 300px;
+  }
+
+  .entertainment-detail img {
+    width: 250px;
+  }
+
+  .entertainment-detail .content h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 670px) {
+  .entertainment-detail .content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .entertainment-detail .content span {
+    display: block;
+    text-align: center;
+  }
+
+  .entertainment-detail .content span::after {
+    content: "";
+  }
+
+  .entertainment-detail .isEp {
+    width: 250px;
+  }
+}
+
+@media (max-width: 280px) {
+  .entertainment-detail img {
+    width: 200px;
+  }
+
+  .entertainment-detail .isEp {
+    width: 200px;
+  }
+}

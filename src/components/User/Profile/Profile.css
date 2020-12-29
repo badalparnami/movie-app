@@ -1,0 +1,42 @@
+.profile-main {
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-main h3 {
+  color: crimson;
+  letter-spacing: 0.15rem;
+}
+
+.profile-main h3 span {
+  margin-top: 1rem;
+  display: block;
+  color: black;
+  letter-spacing: normal;
+}
+
+.profile-main p {
+  margin-top: 1rem;
+}
+
+.profile-sub {
+  margin-top: 3rem;
+}
+
+.profile-sub .watchlist,
+.profile-sub .watched {
+  margin-top: 3rem;
+}
+
+/* .profile-sub h1 {
+  margin-bottom: 1rem;
+} */
+
+.credits-main h3 {
+  padding: 1rem;
+}

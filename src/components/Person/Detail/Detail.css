@@ -1,0 +1,19 @@
+.onlyfirst {
+  cursor: pointer;
+}
+
+.onlyfirst .show {
+  display: block;
+}
+
+.onlyfirst .show-all {
+  display: block;
+}
+
+.onlyfirst .show:first-child::after {
+  content: "...";
+}
+
+.onlyfirst .hide {
+  display: none;
+}
