@@ -80,9 +80,9 @@ export const auth = (email, password, isLogin, name) => {
       password,
       name,
     };
-    let url = "${process.env.REACT_APP_BACKEND_URL}/auth/login";
+    let url = `${process.env.REACT_APP_BACKEND_URL}/auth/login`;
     if (!isLogin) {
-      url = "${process.env.REACT_APP_BACKEND_URL}/auth/signup";
+      url = `${process.env.REACT_APP_BACKEND_URL}/auth/signup`;
     }
     axios
       .post(url, authData)
